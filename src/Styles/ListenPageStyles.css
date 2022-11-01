@@ -1,0 +1,43 @@
+@font-face {
+  font-family: bebas neue;
+  src: url(../Bebas_Neue/BebasNeue-Regular.ttf);
+  font-style: normal;
+  font-weight: lighter;
+}
+
+.linkContainer {
+  position: absolute;
+  border-radius: 2px;
+  background-color: #ffffff;
+  top: 135px;
+  padding: 15px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75vw;
+  max-width: 400px;
+  font-size: 20px;
+  text-align: center;
+  font-family: bebas neue;
+}
+
+.linkContainer img {
+  width: 40%;
+}
+
+.linkContainer li {
+  list-style: none;
+  border: 2px solid #fb772b;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+.linkContainer a {
+  text-decoration: none;
+  color: black;
+}
+
+.trackTitle {
+  font-size: 20px;
+}

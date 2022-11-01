@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./Styles/App.css";
+import { NavBar } from "./Components/NavBar";
+import { useState } from "react";
+import { TopBanner } from "./Components/TopBanner";
+import { MobileDropdownBg } from "./Components/MobileDropdownBg";
+import { AnimatedRoutes } from "./Components/AnimatedRoutes";
 
 function App() {
+  const [showBackground, setShowBackground] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <TopBanner showBackground={showBackground} />
+        <MobileDropdownBg showBackground={showBackground} />
+        <NavBar
+          setShowBackground={setShowBackground}
+          showBackground={showBackground}
+        />
+        <AnimatedRoutes></AnimatedRoutes>
+      </div>
+    </>
   );
 }
 

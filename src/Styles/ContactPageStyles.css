@@ -1,0 +1,168 @@
+@font-face {
+  font-family: bebas neue;
+  src: url(../Bebas_Neue/BebasNeue-Regular.ttf);
+  font-style: normal;
+  font-weight: lighter;
+}
+
+.formContainer {
+  position: absolute;
+  border-radius: 2px;
+  background-color: #ffffff;
+  top: 230px;
+  padding: 15px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75vw;
+  max-width: 400px;
+  font-size: 20px;
+}
+
+.formContainer a {
+  letter-spacing: 1px;
+}
+.contact-page {
+  padding-top: 140px;
+  font-family: bebas neue;
+  text-align: center;
+  padding-bottom: 600px;
+}
+
+.contact-title {
+  font: 70px bebas neue;
+  color: white;
+}
+
+form {
+  max-width: 420px;
+  margin: 10px auto;
+}
+.formContainer label {
+  color: rgb(119, 119, 119);
+}
+
+.formContainer h1 {
+  font: 70px bebas neue;
+}
+
+.feedback-input {
+  color: rgb(0, 0, 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 3px;
+  line-height: 0px;
+  background-color: transparent;
+  border: 2px solid #fb772b;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+  height: 35px;
+}
+
+.sent input,
+.sent textarea,
+.sent label {
+  display: none;
+}
+
+.formContainer button {
+  display: none;
+}
+
+.sent button {
+  font-family: bebas neue;
+  width: 100%;
+  background: #fb772b;
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.sent {
+  position: absolute;
+  border-radius: 2px;
+  background-color: #ffffff;
+  top: 230px;
+  padding: 15px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75vw;
+  height: 200px;
+  max-width: 400px;
+}
+
+.message {
+  color: rgb(0, 0, 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 3px;
+  background-color: transparent;
+  border: 2px solid #fb772b;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+textarea {
+  height: 100px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: bebas neue;
+  width: 100%;
+  background: #fb772b;
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+[type="submit"]:active {
+  background: #ffe1cf;
+}
+
+.error-messages {
+  color: red;
+}
+
+.formContainer a {
+  color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-page {
+    padding-top: 100px;
+  }
+
+  .formContainer {
+    top: 200px;
+  }
+}

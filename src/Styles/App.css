@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+html body {
+  overflow: visible;
+  background-image: url("../images/orangebg.png");
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+.App {
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+  z-index: -0;
+  font: bebas neue;
+}
+
+.bannerContainer {
+  position: sticky;
+  top: 0;
+  z-index: 200000;
+}
+
+.dvdlogo {
+  width: 200px;
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  animation: fadeIn 1s linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeMe.none {
+  display: none;
+}
+
+.bill {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 800px) {
+  .shop {
+    padding-top: 15vh;
+  }
+}

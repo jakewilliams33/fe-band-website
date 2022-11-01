@@ -1,0 +1,187 @@
+.picContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  clear: both;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  top: 30px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide .band {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev {
+  color: grey !important;
+}
+.swiper-button-next {
+  color: grey !important;
+}
+
+/* pictures desktop  */
+
+.bill {
+  background-image: url("../images/billGif.gif");
+  width: "100%";
+  height: "100%";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.treeboy {
+  background-image: url("../images/treeboyBlack1.png");
+  width: "100%";
+  height: "100%";
+}
+
+.shirts {
+  background-image: url("../images/bothTee.png");
+  width: "100%";
+  height: "100%";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.billText {
+  margin-top: 100px;
+  min-width: 600px;
+  width: 45%;
+}
+
+.treeboyText {
+  position: absolute;
+  background-image: url("../images/treeboyText.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50px;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  z-index: 684984984984984;
+}
+
+.merchText {
+  width: 32%;
+  min-width: 500px;
+  margin-top: 400px;
+
+  max-width: 580px;
+}
+.tourText {
+  width: 32%;
+  min-width: 400px;
+  position: absolute;
+  top: 60px;
+  left: 45vw;
+  max-width: 580px;
+}
+
+@media screen and (max-width: 600px) {
+  /* pictures mobile  */
+
+  .treeboy {
+    background-image: url("../images/mobileTreeboyblack1.png");
+    width: "100%";
+    height: "100%";
+    background-size: 100% 100%;
+  }
+
+  .bill {
+    background-image: url("../images/billgif4.png");
+    width: "100%";
+    height: "100%";
+    background-position: center;
+    background-size: cover;
+  }
+
+  .shirts {
+    background-image: url("../images/bothTeeMobile.png");
+  }
+  .swiper-button-prev {
+    display: none !important;
+  }
+  .swiper-button-next {
+    display: none !important;
+  }
+
+  .picContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .swiper-slide .band {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 50%;
+  }
+
+  .billText {
+    width: 100%;
+    min-width: unset;
+    filter: brightness(0%);
+  }
+
+  .treeboyText {
+    background-image: url("../images/treeboyTextMobile.png");
+    width: 150%;
+  }
+
+  .merchText {
+    min-width: unset;
+    width: 65%;
+    position: absolute;
+    top: 400px;
+    left: 18vw;
+    margin: unset;
+    position: absolute;
+  }
+
+  .tourText {
+    width: 32%;
+    min-width: 400px;
+    position: absolute;
+    top: 60px;
+    left: 8vw;
+    max-width: 580px;
+  }
+}

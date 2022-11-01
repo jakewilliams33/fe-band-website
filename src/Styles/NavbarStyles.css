@@ -1,0 +1,269 @@
+@font-face {
+  font-family: bebas neue;
+  src: url(../Bebas_Neue/BebasNeue-Regular.ttf);
+  font-style: normal;
+  font-weight: lighter;
+}
+
+nav {
+  display: grid;
+  position: absolute;
+  grid-template-areas:
+    "left left right"
+    "left left right"
+    "bottom bottom bottom";
+  grid-template-columns: min-content;
+  font: 30px bebas neue;
+  -webkit-text-stroke: 1px;
+  padding-top: 18px;
+  padding-bottom: 1%;
+  left: -5px;
+  z-index: 20200;
+  top: 30px;
+  width: 100%;
+}
+
+.iconContainer {
+  position: absolute;
+  right: 0;
+  font-size: 28px;
+  top: 45px;
+}
+
+.icons {
+  padding-right: 1.2vw;
+}
+
+.showDrop {
+  display: none;
+}
+
+.logo {
+  width: 90px;
+  margin-left: 20px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  -webkit-animation: rotating 4s linear infinite;
+  -moz-animation: rotating 4s linear infinite;
+  -ms-animation: rotating 4s linear infinite;
+  -o-animation: rotating 4s linear infinite;
+  animation: rotating 4s linear infinite;
+}
+.navbar-pages-list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2vw;
+  width: 45%;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+}
+
+.icons:hover {
+  animation: shake 0.8s;
+}
+
+.navbar-pages-list li {
+  list-style: none;
+  padding: 1px;
+  margin-right: 20px;
+  color: white;
+  transition: 2ms;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px #000000;
+}
+
+.navbar-pages-list li:hover {
+  animation: shake 0.8s;
+}
+
+.imgButton {
+  display: none;
+}
+
+.mobile-background {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .mobile-background {
+    display: unset;
+  }
+  .imgButton {
+    display: flex;
+    position: absolute;
+    z-index: 1000;
+  }
+
+  .showDrop {
+    display: flex;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    position: absolute;
+    padding: 0;
+    left: unset;
+  }
+
+  nav li {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar-container-all {
+    z-index: 100000000000;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+    transition: all 1s ease-in-out;
+    margin-left: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .navbar-container-all.active {
+    z-index: 109987987987;
+    position: fixed;
+    top: 20%;
+    transition: all 1s ease-in-out;
+    text-align: center;
+  }
+
+  .navbar-pages-list {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    left: 5px;
+    font-size: 6vh;
+  }
+
+  .navbar-pages-list li {
+    margin-right: 0;
+    color: rgb(255, 254, 231);
+    font: bebas neue;
+    -webkit-text-stroke: 2px;
+    transition: all 1s ease-in-out;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 3vh;
+    opacity: 0;
+  }
+
+  .navbar-pages-list.active li {
+    opacity: 1;
+  }
+
+  .icons {
+    margin-right: 4%;
+  }
+
+  .iconContainer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding-left: 25px;
+    font-size: 33px;
+    top: unset;
+    bottom: -60vh;
+  }
+
+  .iconContainer a {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+  }
+
+  .iconContainer.active a {
+    opacity: 1;
+  }
+
+  #apple {
+    font-size: 38px;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: otate(0deg);
+  }
+  10% {
+    transform: rotate(-3deg);
+  }
+  20% {
+    transform: rotate(3deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(-3deg);
+  }
+  80% {
+    transform: rotate(3deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
