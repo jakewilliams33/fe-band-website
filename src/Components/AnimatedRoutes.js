@@ -21,7 +21,7 @@ export const AnimatedRoutes = () => {
         <Route path="/tour" element={<TourPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/listen/:release_id" element={<ListenPage />} />
-        <Route path="*" element={<ErrorPage />} />
+        <Route path="error" element={<ErrorPage />} />
       </Routes>
     </AnimatePresence>
   );
