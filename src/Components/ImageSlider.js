@@ -20,14 +20,13 @@ export const ImageSlider = () => {
           loop={true}
           centeredSlides={true}
           autoplay={{
-            delay: 10000,
+            delay: 6000,
             disableOnInteraction: false,
           }}
           pagination={{
             clickable: false,
           }}
           modules={[Autoplay, Pagination, Navigation, EffectFade]}
-          className="mySwiper"
           navigation={true}
           breakpoints={{
             800: {
