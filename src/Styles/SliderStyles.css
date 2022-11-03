@@ -65,9 +65,11 @@ body {
 
 .swiper-button-prev {
   color: grey !important;
+  top: 45% !important;
 }
 .swiper-button-next {
   color: grey !important;
+  top: 45% !important;
 }
 
 .swiper-button-prev:active {
