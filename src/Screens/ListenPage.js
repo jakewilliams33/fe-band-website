@@ -10,6 +10,7 @@ import iHadImg from "../images/Covers/iHad.png";
 import iHadrmxImg from "../images/Covers/iHadRemix.png";
 import "../Styles/ListenPageStyles.css";
 import { motion } from "framer-motion";
+import { ErrorPage } from "./ErrorPage";
 
 export const ListenPage = () => {
   const { release_id } = useParams();
@@ -162,88 +163,92 @@ export const ListenPage = () => {
       exit="exit"
       transition={{ duration: 0.3 }}
     >
-      <div className="linkContainer">
-        <img alt="art" src={current.image}></img>
-        <h1 className="trackTile">{current.title}</h1>
-        <ul>
-          <li>
-            <a target="blank" href={current.spotify}>
-              <img
-                class="music-service-list__img"
-                data-test="music-service-item-image"
-                src="https://services.linkfire.com/logo_spotify_onlight.svg"
-                alt="Spotify"
-              ></img>
-            </a>
-          </li>
-          {current.apple && (
+      {Object.keys(current).length > 0 ? (
+        <div className="linkContainer">
+          <img alt="art" src={current.image}></img>
+          <h1 className="trackTile">{current.title}</h1>
+          <ul>
             <li>
-              <a target="blank" href={current.apple}>
+              <a target="blank" href={current.spotify}>
                 <img
                   class="music-service-list__img"
                   data-test="music-service-item-image"
-                  src="https://services.linkfire.com/logo_applemusic_onlight.svg"
-                  alt="Apple Music"
+                  src="https://services.linkfire.com/logo_spotify_onlight.svg"
+                  alt="Spotify"
                 ></img>
               </a>
             </li>
-          )}
-          <li>
-            <a target="blank" href={current.bandcamp}>
-              <img
-                class="music-service-list__img"
-                data-test="music-service-item-image"
-                src="https://services.linkfire.com/logo_bandcamp_onlight.svg"
-                alt="bandcamp"
-              ></img>
-            </a>
-          </li>
-          <li>
-            <a target="blank" href={current.youtube}>
-              <img
-                class="music-service-list__img"
-                data-test="music-service-item-image"
-                src="https://services.linkfire.com/logo_youtube_onlight.svg"
-                alt="youtube"
-              ></img>
-            </a>
-          </li>
-          <li>
-            <a target="blank" href={current.tidal}>
-              <img
-                class="music-service-list__img"
-                data-test="music-service-item-image"
-                src="https://services.linkfire.com/logo_tidal_onlight.svg"
-                alt="tidal"
-              ></img>
-            </a>
-          </li>
-          {current.amazon && (
+            {current.apple && (
+              <li>
+                <a target="blank" href={current.apple}>
+                  <img
+                    class="music-service-list__img"
+                    data-test="music-service-item-image"
+                    src="https://services.linkfire.com/logo_applemusic_onlight.svg"
+                    alt="Apple Music"
+                  ></img>
+                </a>
+              </li>
+            )}
             <li>
-              <a target="blank" href={current.amazon}>
+              <a target="blank" href={current.bandcamp}>
                 <img
                   class="music-service-list__img"
                   data-test="music-service-item-image"
-                  src="https://services.linkfire.com/logo_amazonmusic_onlight.svg"
-                  alt="amazon"
+                  src="https://services.linkfire.com/logo_bandcamp_onlight.svg"
+                  alt="bandcamp"
                 ></img>
               </a>
             </li>
-          )}
-          {current.deezer && (
             <li>
-              <a target="blank" href={current.deezer}>
+              <a target="blank" href={current.youtube}>
                 <img
                   class="music-service-list__img"
                   data-test="music-service-item-image"
-                  src="https://services.linkfire.com/logo_deezer_onlight.svg"
-                  alt="deezer"
+                  src="https://services.linkfire.com/logo_youtube_onlight.svg"
+                  alt="youtube"
                 ></img>
               </a>
             </li>
-          )}
-        </ul>
-      </div>
+            <li>
+              <a target="blank" href={current.tidal}>
+                <img
+                  class="music-service-list__img"
+                  data-test="music-service-item-image"
+                  src="https://services.linkfire.com/logo_tidal_onlight.svg"
+                  alt="tidal"
+                ></img>
+              </a>
+            </li>
+            {current.amazon && (
+              <li>
+                <a target="blank" href={current.amazon}>
+                  <img
+                    class="music-service-list__img"
+                    data-test="music-service-item-image"
+                    src="https://services.linkfire.com/logo_amazonmusic_onlight.svg"
+                    alt="amazon"
+                  ></img>
+                </a>
+              </li>
+            )}
+            {current.deezer && (
+              <li>
+                <a target="blank" href={current.deezer}>
+                  <img
+                    class="music-service-list__img"
+                    data-test="music-service-item-image"
+                    src="https://services.linkfire.com/logo_deezer_onlight.svg"
+                    alt="deezer"
+                  ></img>
+                </a>
+              </li>
+            )}
+          </ul>
+        </div>
+      ) : (
+        <ErrorPage />
+      )}
     </motion.div>
   );
 };
