@@ -33,7 +33,12 @@ export const MobileDropdownBg = ({ showBackground }) => {
             exit="out"
             variants={pageTransition}
             transition={{ type: "just", duration: 1 }}
-            style={{ backgroundColor: "black", height: "100%", width: "100%" }}
+            style={{
+              backgroundColor: "black",
+              height: "100%",
+              width: "100%",
+              zIndex: 2000000,
+            }}
           >
             <DvdBackground />
           </motion.div>
