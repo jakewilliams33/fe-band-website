@@ -11,8 +11,8 @@ export const DvdBackground = () => {
 
   let yPosition =
     Math.random() < 0.5
-      ? Math.floor(Math.random() * (visualViewport.height - 700 + 1) + -10)
-      : Math.floor(Math.random() * (visualViewport.height - 150 + 1) + -10);
+      ? Math.floor(Math.random() * (visualViewport.height - 550) + -10)
+      : Math.floor(Math.random() * (visualViewport.height - 150) + -10);
 
   let xSpeed = Math.random() < 0.5 ? -2.5 : 2.5;
   let ySpeed = 0.5;

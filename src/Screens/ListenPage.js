@@ -171,7 +171,6 @@ export const ListenPage = () => {
             <li>
               <a target="blank" href={current.spotify}>
                 <img
-                  class="music-service-list__img"
                   data-test="music-service-item-image"
                   src="https://services.linkfire.com/logo_spotify_onlight.svg"
                   alt="Spotify"
@@ -182,7 +181,6 @@ export const ListenPage = () => {
               <li>
                 <a target="blank" href={current.apple}>
                   <img
-                    class="music-service-list__img"
                     data-test="music-service-item-image"
                     src="https://services.linkfire.com/logo_applemusic_onlight.svg"
                     alt="Apple Music"
@@ -193,7 +191,6 @@ export const ListenPage = () => {
             <li>
               <a target="blank" href={current.bandcamp}>
                 <img
-                  class="music-service-list__img"
                   data-test="music-service-item-image"
                   src="https://services.linkfire.com/logo_bandcamp_onlight.svg"
                   alt="bandcamp"
@@ -203,7 +200,6 @@ export const ListenPage = () => {
             <li>
               <a target="blank" href={current.youtube}>
                 <img
-                  class="music-service-list__img"
                   data-test="music-service-item-image"
                   src="https://services.linkfire.com/logo_youtube_onlight.svg"
                   alt="youtube"
@@ -213,7 +209,6 @@ export const ListenPage = () => {
             <li>
               <a target="blank" href={current.tidal}>
                 <img
-                  class="music-service-list__img"
                   data-test="music-service-item-image"
                   src="https://services.linkfire.com/logo_tidal_onlight.svg"
                   alt="tidal"
@@ -224,7 +219,6 @@ export const ListenPage = () => {
               <li>
                 <a target="blank" href={current.amazon}>
                   <img
-                    class="music-service-list__img"
                     data-test="music-service-item-image"
                     src="https://services.linkfire.com/logo_amazonmusic_onlight.svg"
                     alt="amazon"
@@ -236,7 +230,6 @@ export const ListenPage = () => {
               <li>
                 <a target="blank" href={current.deezer}>
                   <img
-                    class="music-service-list__img"
                     data-test="music-service-item-image"
                     src="https://services.linkfire.com/logo_deezer_onlight.svg"
                     alt="deezer"

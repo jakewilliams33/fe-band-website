@@ -27,16 +27,14 @@ export const MenuButtonCopy = ({
 
   return (
     <>
-      <div className="caseWrapper">
-        <img
-          onClick={handleToggle}
-          alt="menu button"
-          ref={imgButton}
-          className={!navbarOpen ? "case" : "caseOpen"}
-          style={{ width: "150px" }}
-          src={menuButtonGif}
-        ></img>
-      </div>
+      <div
+        onClick={handleToggle}
+        alt="menu button"
+        ref={imgButton}
+        className={!navbarOpen ? "case" : "caseOpen"}
+        style={{ zIndex: 200000 }}
+        src={menuButtonGif}
+      ></div>
     </>
   );
 };
