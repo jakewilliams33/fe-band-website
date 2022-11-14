@@ -115,7 +115,7 @@ export const NavBar = ({ setShowBackground, showBackground }) => {
                   onClick={() => handleToggle()}
                 >
                   <Link className="links" to="contact">
-                    contact
+                    CONTACT
                   </Link>
                 </li>
               </ul>
