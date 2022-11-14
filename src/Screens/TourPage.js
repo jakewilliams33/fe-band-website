@@ -21,22 +21,23 @@ export const TourPage = () => {
       transition={{ duration: 0.2 }}
     >
       <div className="orangeLine"></div>
-      <section className="skew-background-tour"></section>
-      <div className="widgetContainer">
-        <h1>Tour</h1>
+      <section className="skew-background-tour">
+        <div className="widgetContainer">
+          <h1>Tour</h1>
 
-        <a
-          href="https://www.songkick.com/artists/10172348"
-          className="songkick-widget"
-          data-theme="dark"
-          data-other-artists="on"
-          data-detect-style="true"
-          data-background-color="transparent"
-          data-locale="en"
-        >
-          Dates
-        </a>
-      </div>
+          <a
+            href="https://www.songkick.com/artists/10172348"
+            className="songkick-widget"
+            data-theme="dark"
+            data-other-artists="on"
+            data-detect-style="true"
+            data-background-color="transparent"
+            data-locale="en"
+          >
+            Dates
+          </a>
+        </div>
+      </section>
     </motion.div>
   );
 };

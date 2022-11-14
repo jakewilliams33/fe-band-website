@@ -205,7 +205,7 @@ nav {
 
 @keyframes shake {
   0% {
-    transform: otate(0deg);
+    transform: rotate(0deg);
   }
   10% {
     transform: rotate(-3deg);
