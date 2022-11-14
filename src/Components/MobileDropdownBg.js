@@ -32,7 +32,7 @@ export const MobileDropdownBg = ({ showBackground }) => {
             animate="in"
             exit="out"
             variants={pageTransition}
-            transition={{ type: "just", duration: 1 }}
+            transition={{ type: "just", duration: 0.7 }}
             style={{
               backgroundColor: "black",
               height: "100%",
