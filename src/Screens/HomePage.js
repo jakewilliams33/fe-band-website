@@ -8,7 +8,7 @@ const transitions = {
   exit: { opacity: 0 },
 };
 
-export const HomePage = () => {
+export const HomePage = ({ showBackground }) => {
   return (
     <motion.div
       variants={transitions}
@@ -17,7 +17,7 @@ export const HomePage = () => {
       exit="exit"
       transition={{ duration: 0.2 }}
     >
-      <ImageSlider></ImageSlider>
+      <ImageSlider showBackground={showBackground}></ImageSlider>
     </motion.div>
   );
 };

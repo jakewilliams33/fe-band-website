@@ -12,7 +12,7 @@ import merchText from "../images/merchText.png";
 import tourText from "../images/tourText.png";
 import { Link } from "react-router-dom";
 
-export const ImageSlider = () => {
+export const ImageSlider = ({ showBackground }) => {
   return (
     <>
       <div className="picContainer">
@@ -20,7 +20,7 @@ export const ImageSlider = () => {
           loop={true}
           centeredSlides={true}
           autoplay={{
-            delay: 6000,
+            delay: 7000,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -42,6 +42,7 @@ export const ImageSlider = () => {
             <Link
               to="/listen/bill_murray"
               style={{ height: "100%", width: "100%" }}
+              className={showBackground ? "off" : "on"}
             >
               <div
                 className="bill"
@@ -62,6 +63,7 @@ export const ImageSlider = () => {
             <Link
               to="/listen/role_models"
               style={{ height: "100%", width: "100%" }}
+              className={showBackground ? "off" : "on"}
             >
               <div
                 className="treeboy"
@@ -78,7 +80,11 @@ export const ImageSlider = () => {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link style={{ height: "100%", width: "100%" }} to="merch">
+            <Link
+              style={{ height: "100%", width: "100%" }}
+              to="merch"
+              className={showBackground ? "off" : "on"}
+            >
               <div
                 className="shirts"
                 style={{
@@ -95,7 +101,11 @@ export const ImageSlider = () => {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link style={{ height: "100%", width: "100%" }} to="tour">
+            <Link
+              style={{ height: "100%", width: "100%" }}
+              to="tour"
+              className={showBackground ? "off" : "on"}
+            >
               <img src={group1} alt="band" className="band"></img>
               <img src={tourText} className="tourText" alt="tour dates"></img>
             </Link>

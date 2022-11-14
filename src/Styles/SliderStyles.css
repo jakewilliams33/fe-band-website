@@ -56,6 +56,16 @@ body {
   align-items: center;
 }
 
+.off {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.on {
+  opacity: 1;
+  transition: all 1s;
+}
+
 .swiper-slide .band {
   display: block;
   width: 100%;

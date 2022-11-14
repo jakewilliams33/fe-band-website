@@ -9,13 +9,17 @@ import { MusicPage } from "../Screens/MusicPage";
 import { AnimatePresence } from "framer-motion";
 import { ListenPage } from "../Screens/ListenPage";
 
-export const AnimatedRoutes = () => {
+export const AnimatedRoutes = ({ showBackground }) => {
   const location = useLocation();
 
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route exact path="/" element={<HomePage />} />
+        <Route
+          exact
+          path="/"
+          element={<HomePage showBackground={showBackground} />}
+        />
         <Route path="/music" element={<MusicPage />} />
         <Route path="/merch" element={<MerchPage />} />
         <Route path="/tour" element={<TourPage />} />
