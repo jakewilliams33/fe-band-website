@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../Styles/NavbarStyles.css";
 import logo from "../images/logoroundbg.png";
 import { MenuButtonCopy } from "./MenuButtonCopy";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   faApple,
   faBandcamp,
@@ -20,6 +20,12 @@ import animatedClosed from "../images/animationClosed2.png";
 export const NavBar = ({ setShowBackground, showBackground }) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [menuButtonGif, setMenuButtonGif] = useState(initial);
+  const location = useLocation();
+
+  useEffect(() => {
+    setShowBackground(false);
+    setNavbarOpen(false);
+  }, [location, setShowBackground]);
 
   let opacityVar;
   if (navbarOpen) {

@@ -17,7 +17,10 @@ function App() {
           setShowBackground={setShowBackground}
           showBackground={showBackground}
         />
-        <AnimatedRoutes showBackground={showBackground}></AnimatedRoutes>
+        <AnimatedRoutes
+          showBackground={showBackground}
+          setShowBackground={setShowBackground}
+        ></AnimatedRoutes>
       </div>
     </>
   );
