@@ -1,4 +1,9 @@
 {
   "short_name": "React App",
-  "name": "Create React App Sample"
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ]
 }
