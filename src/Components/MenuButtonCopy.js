@@ -1,14 +1,10 @@
 import React, { useRef } from "react";
 import "../Styles/NewButtonStyle.css";
-import animated from "../images/dvdAnimation2.png";
-import animatedClosed from "../images/animationClosed2.png";
 
 export const MenuButtonCopy = ({
   navbarOpen,
   setNavbarOpen,
   setShowBackground,
-  menuButtonGif,
-  setMenuButtonGif,
   showBackground,
 }) => {
   const imgButton = useRef();
@@ -17,12 +13,6 @@ export const MenuButtonCopy = ({
     setNavbarOpen((prev) => !prev);
     setShowBackground((prev) => !prev);
     document.body.style.overflow = !showBackground ? "hidden" : "visible";
-
-    if (!navbarOpen) {
-      setMenuButtonGif(animated);
-    } else if (navbarOpen) {
-      setMenuButtonGif(animatedClosed);
-    }
   };
 
   return (
@@ -33,7 +23,6 @@ export const MenuButtonCopy = ({
         ref={imgButton}
         className={!navbarOpen ? "case" : "caseOpen"}
         style={{ zIndex: 200000 }}
-        src={menuButtonGif}
       ></div>
     </>
   );

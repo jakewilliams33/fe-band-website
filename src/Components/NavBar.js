@@ -13,13 +13,9 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import initial from "../images/initial.png";
-import animated from "../images/dvdAnimation2.png";
-import animatedClosed from "../images/animationClosed2.png";
 
 export const NavBar = ({ setShowBackground, showBackground }) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const [menuButtonGif, setMenuButtonGif] = useState(initial);
   const location = useLocation();
 
   useEffect(() => {
@@ -39,12 +35,6 @@ export const NavBar = ({ setShowBackground, showBackground }) => {
       setNavbarOpen((prev) => !prev);
       setShowBackground((prev) => !prev);
       document.body.style.overflow = !showBackground ? "hidden" : "visible";
-
-      if (!navbarOpen) {
-        setMenuButtonGif(animated);
-      } else if (navbarOpen) {
-        setMenuButtonGif(animatedClosed);
-      }
     }
   };
 
@@ -67,9 +57,6 @@ export const NavBar = ({ setShowBackground, showBackground }) => {
           navbarOpen={navbarOpen}
           setNavbarOpen={setNavbarOpen}
           setShowBackground={setShowBackground}
-          initial={initial}
-          setMenuButtonGif={setMenuButtonGif}
-          menuButtonGif={menuButtonGif}
           showBackground={showBackground}
         ></MenuButtonCopy>
 
