@@ -4,13 +4,13 @@ import "../Styles/NavbarStyles.css";
 export const DvdBanner = () => {
   const section = useRef();
   const dvdlogo = useRef();
-  const FPS = 50;
+  const FPS = 40;
 
   let xPosition = Math.floor(Math.random() * (250 - -50 + 1) + -50);
   let yPosition = 5;
 
-  let xSpeed = Math.random() < 0.5 ? -2.3 : 2.3;
-  let ySpeed = 0.23;
+  let xSpeed = Math.random() < 0.5 ? -2.5 : 2.5;
+  let ySpeed = 0.16;
 
   // let xSpeed = Math.random() < 0.5 ? 0.2 : -0.2;
   // let ySpeed = 0.02;
