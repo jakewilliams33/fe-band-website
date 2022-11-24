@@ -1,4 +1,4 @@
 Website built using React for the band 'Adult DVD'.
 
-Hosted here - adultdvd.band
+Hosted here - https://adultdvd.band/
 
