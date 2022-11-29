@@ -58,12 +58,12 @@ body {
 
 .off {
   opacity: 0;
-  transition: all 1s;
+  transition: all 0.1s;
 }
 
 .on {
   opacity: 1;
-  transition: all 1s;
+  transition: all 0.1s;
 }
 
 .swiper-slide .band {

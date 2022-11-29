@@ -13,7 +13,13 @@ import tourText from "../images/tourText.png";
 import { Link } from "react-router-dom";
 
 export const ImageSlider = ({ showBackground }) => {
-  const transitionVar = showBackground ? "all 6s" : "all 0.1s";
+  const transitionVar = showBackground ? "1s" : "0s";
+
+  const linkStyle = {
+    height: "100%",
+    width: "100%",
+    "transition-delay": transitionVar,
+  };
 
   return (
     <>
@@ -43,11 +49,7 @@ export const ImageSlider = ({ showBackground }) => {
           <SwiperSlide>
             <Link
               to="/listen/bill_murray"
-              style={{
-                height: "100%",
-                width: "100%",
-                transition: transitionVar,
-              }}
+              style={linkStyle}
               className={showBackground ? "off" : "on"}
             >
               <div
@@ -83,11 +85,7 @@ export const ImageSlider = ({ showBackground }) => {
           <SwiperSlide>
             <Link
               to="/listen/role_models"
-              style={{
-                height: "100%",
-                width: "100%",
-                transition: transitionVar,
-              }}
+              style={linkStyle}
               className={showBackground ? "off" : "on"}
             >
               <div
@@ -106,11 +104,7 @@ export const ImageSlider = ({ showBackground }) => {
           </SwiperSlide>
           <SwiperSlide>
             <Link
-              style={{
-                height: "100%",
-                width: "100%",
-                transition: transitionVar,
-              }}
+              style={linkStyle}
               to="merch"
               className={showBackground ? "off" : "on"}
             >
@@ -131,11 +125,7 @@ export const ImageSlider = ({ showBackground }) => {
           </SwiperSlide>
           <SwiperSlide>
             <Link
-              style={{
-                height: "100%",
-                width: "100%",
-                transition: transitionVar,
-              }}
+              style={linkStyle}
               to="tour"
               className={showBackground ? "off" : "on"}
             >
