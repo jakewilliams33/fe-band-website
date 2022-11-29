@@ -2,16 +2,10 @@ import React from "react";
 import errorImg from "../images/errorPage.png";
 import { motion } from "framer-motion";
 
-const transitions = {
-  initial: { opacity: 0 },
-  animate: { opacity: 1 },
-  exit: { opacity: 0 },
-};
-
-export const ErrorPage = () => {
+export const ErrorPage = ({ opacity }) => {
   return (
     <motion.div
-      variants={transitions}
+      variants={opacity}
       initial="initial"
       animate="animate"
       exit="exit"

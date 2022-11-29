@@ -4,16 +4,10 @@ import white from "../images/whiteTee.png";
 import orange from "../images/orangeTee.png";
 import { motion } from "framer-motion";
 
-const transitions = {
-  initial: { opacity: 0 },
-  animate: { opacity: 1 },
-  exit: { opacity: 0 },
-};
-
-export const MerchPage = () => {
+export const MerchPage = ({ opacity }) => {
   return (
     <motion.div
-      variants={transitions}
+      variants={opacity}
       initial="initial"
       animate="animate"
       exit="exit"

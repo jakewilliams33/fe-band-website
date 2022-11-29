@@ -3,22 +3,16 @@ import { useScript } from "../Hooks/useScript";
 import "../Styles/TourPageStyles.css";
 import { motion } from "framer-motion";
 
-const transitions = {
-  initial: { width: 0, opacity: 0 },
-  animate: { width: "100%", opacity: 1 },
-  exit: { x: 5000, opacity: 0 },
-};
-
-export const TourPage = () => {
+export const TourPage = ({ slide }) => {
   useScript("//widget.songkick.com/10172348/widget.js");
 
   return (
     <motion.div
-      variants={transitions}
+      variants={slide}
       initial="initial"
       animate="animate"
       exit="exit"
-      transition={{ duration: 0.2 }}
+      transition={{ duration: 0.3 }}
     >
       <div className="orangeLine"></div>
       <section className="skew-background-tour">

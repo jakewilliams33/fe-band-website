@@ -4,15 +4,9 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import "../Styles/ContactPageStyles.css";
 import { motion } from "framer-motion";
-export const ContactPage = () => {
+export const ContactPage = ({ opacity }) => {
   const form = useRef();
   const [sent, setSent] = useState(false);
-
-  const transitions = {
-    initial: { opacity: 0 },
-    animate: { opacity: 1 },
-    exit: { opacity: 0 },
-  };
 
   const formik = useFormik({
     initialValues: {
@@ -57,7 +51,7 @@ export const ContactPage = () => {
 
   return (
     <motion.div
-      variants={transitions}
+      variants={opacity}
       initial="initial"
       animate="animate"
       exit="exit"

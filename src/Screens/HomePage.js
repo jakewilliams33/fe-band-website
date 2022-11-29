@@ -2,16 +2,10 @@ import React from "react";
 import { ImageSlider } from "../Components/ImageSlider";
 import { motion } from "framer-motion";
 
-const transitions = {
-  initial: { opacity: 0 },
-  animate: { opacity: 1 },
-  exit: { opacity: 0 },
-};
-
-export const HomePage = ({ showBackground }) => {
+export const HomePage = ({ showBackground, opacity }) => {
   return (
     <motion.div
-      variants={transitions}
+      variants={opacity}
       initial="initial"
       animate="animate"
       exit="exit"

@@ -13,6 +13,8 @@ import tourText from "../images/tourText.png";
 import { Link } from "react-router-dom";
 
 export const ImageSlider = ({ showBackground }) => {
+  const transitionVar = showBackground ? "all 6s" : "all 0.1s";
+
   return (
     <>
       <div className="picContainer">
@@ -41,7 +43,11 @@ export const ImageSlider = ({ showBackground }) => {
           <SwiperSlide>
             <Link
               to="/listen/bill_murray"
-              style={{ height: "100%", width: "100%" }}
+              style={{
+                height: "100%",
+                width: "100%",
+                transition: transitionVar,
+              }}
               className={showBackground ? "off" : "on"}
             >
               <div
@@ -59,10 +65,29 @@ export const ImageSlider = ({ showBackground }) => {
               </div>
             </Link>
           </SwiperSlide>
+          {/* <SwiperSlide>
+            <Link
+              to="/listen/santa_what_you_got_for_me"
+              style={{ height: "100%", width: "100%" }}
+              className={showBackground ? "off" : "on"}
+            >
+              <div
+                className="xmas"
+                style={{
+                  height: "100%",
+                  width: "100%",
+                }}
+              ></div>
+            </Link>
+          </SwiperSlide> */}
           <SwiperSlide>
             <Link
               to="/listen/role_models"
-              style={{ height: "100%", width: "100%" }}
+              style={{
+                height: "100%",
+                width: "100%",
+                transition: transitionVar,
+              }}
               className={showBackground ? "off" : "on"}
             >
               <div
@@ -81,7 +106,11 @@ export const ImageSlider = ({ showBackground }) => {
           </SwiperSlide>
           <SwiperSlide>
             <Link
-              style={{ height: "100%", width: "100%" }}
+              style={{
+                height: "100%",
+                width: "100%",
+                transition: transitionVar,
+              }}
               to="merch"
               className={showBackground ? "off" : "on"}
             >
@@ -102,7 +131,11 @@ export const ImageSlider = ({ showBackground }) => {
           </SwiperSlide>
           <SwiperSlide>
             <Link
-              style={{ height: "100%", width: "100%" }}
+              style={{
+                height: "100%",
+                width: "100%",
+                transition: transitionVar,
+              }}
               to="tour"
               className={showBackground ? "off" : "on"}
             >
