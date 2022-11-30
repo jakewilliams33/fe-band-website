@@ -144,8 +144,7 @@ body {
 .merchText {
   width: 32%;
   min-width: 500px;
-  margin-top: 400px;
-
+  margin-top: 45vh;
   max-width: 580px;
 }
 .tourText {
