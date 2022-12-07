@@ -67,7 +67,7 @@ export const ImageSlider = ({ showBackground }) => {
               </div>
             </Link>
           </SwiperSlide>
-          {/* <SwiperSlide>
+          <SwiperSlide>
             <Link
               to="/listen/santa_what_you_got_for_me"
               style={{ height: "100%", width: "100%" }}
@@ -81,7 +81,7 @@ export const ImageSlider = ({ showBackground }) => {
                 }}
               ></div>
             </Link>
-          </SwiperSlide> */}
+          </SwiperSlide>
           <SwiperSlide>
             <Link
               to="/listen/role_models"

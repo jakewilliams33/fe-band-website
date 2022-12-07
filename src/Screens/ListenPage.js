@@ -11,7 +11,7 @@ import iHadrmxImg from "../images/Covers/iHadRemix.png";
 import "../Styles/ListenPageStyles.css";
 import { motion } from "framer-motion";
 import { ErrorPage } from "./ErrorPage";
-// import xmas from "../images/Covers/xmasCover.png";
+import xmas from "../images/Covers/xmasCover.png";
 
 export const ListenPage = ({ opacity }) => {
   const { release_id } = useParams();
@@ -19,19 +19,19 @@ export const ListenPage = ({ opacity }) => {
 
   const getCurrent = useCallback(() => {
     const releaseLinks = [
-      // {
-      //   title: "Santa what you got for me?",
-      //   name: "santa_what_you_got_for_me",
-      //   spotify: "https://open.spotify.com/track/0Umhmtk4SDzt8wO2nDmOrR",
-      //   apple:
-      //     "https://music.apple.com/gb/album/bill-murray/1644105414?i=1644105415&app=music",
-      //   bandcamp: "https://adultdvd.bandcamp.com/track/broken-english",
-      //   youtube: "https://youtube.com/watch?v=URje0etGDoM",
-      //   tidal: "https://listen.tidal.com/track/247313986",
-      //   amazon: "https://music.amazon.com/albums/B0BDR76J9W",
-      //   deezer: "https://www.deezer.com/track/1905303277",
-      //   image: xmas,
-      // },
+      {
+        title: "Santa what you got for me?",
+        name: "santa_what_you_got_for_me",
+        spotify: "https://open.spotify.com/track/0Umhmtk4SDzt8wO2nDmOrR",
+        apple:
+          "https://music.apple.com/gb/album/bill-murray/1644105414?i=1644105415&app=music",
+        bandcamp: "https://adultdvd.bandcamp.com/track/broken-english",
+        youtube: "https://youtube.com/watch?v=URje0etGDoM",
+        tidal: "https://listen.tidal.com/track/247313986",
+        amazon: "https://music.amazon.com/albums/B0BDR76J9W",
+        deezer: "https://www.deezer.com/track/1905303277",
+        image: xmas,
+      },
       {
         title: "Bill Murray",
         name: "bill_murray",

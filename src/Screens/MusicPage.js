@@ -10,14 +10,14 @@ import "../Styles/MusicPageStyles.css";
 import { motion } from "framer-motion";
 import treeboy from "../images/Covers/treeboy.jpg";
 import { Link } from "react-router-dom";
-// import xmas from "../images/Covers/xmasCover.png";
+import xmas from "../images/Covers/xmasCover.png";
 
 const releaseContent = [
-  // {
-  //   image: xmas,
-  //   title: "Santa what you got for me?",
-  //   release_id: "santa_what_you_got_for_me",
-  // },
+  {
+    image: xmas,
+    title: "Santa what you got for me?",
+    release_id: "santa_what_you_got_for_me",
+  },
   {
     image: billmurray,
     title: "Bill Murray",
