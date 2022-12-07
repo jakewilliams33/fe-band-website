@@ -22,14 +22,15 @@ export const ListenPage = ({ opacity }) => {
       {
         title: "Santa what you got for me?",
         name: "santa_what_you_got_for_me",
-        spotify: "https://open.spotify.com/track/0Umhmtk4SDzt8wO2nDmOrR",
+        spotify:
+          "https://open.spotify.com/track/4bOjjtzrsJOZ1RyWYgtgUN?si=a9047bb56a13447d",
         apple:
-          "https://music.apple.com/gb/album/bill-murray/1644105414?i=1644105415&app=music",
-        bandcamp: "https://adultdvd.bandcamp.com/track/broken-english",
-        youtube: "https://youtube.com/watch?v=URje0etGDoM",
-        tidal: "https://listen.tidal.com/track/247313986",
-        amazon: "https://music.amazon.com/albums/B0BDR76J9W",
-        deezer: "https://www.deezer.com/track/1905303277",
+          "https://music.apple.com/gb/album/santa-what-you-got-for-me/1657072793?i=1657072794",
+        youtube: "https://www.youtube.com/watch?v=9R5_eZ-E_r0",
+        tidal: "https://listen.tidal.com/album/263478383/track/263478384",
+        amazon:
+          "https://music.amazon.co.uk/albums/B0BNM24Y2Y?trackAsin=B0BNLZPMQL",
+        deezer: "https://deezer.page.link/wNUvM3tiQAWV6Fy97",
         image: xmas,
       },
       {
@@ -197,15 +198,17 @@ export const ListenPage = ({ opacity }) => {
                   </a>
                 </li>
               )}
-              <li>
-                <a target="blank" href={current.bandcamp}>
-                  <img
-                    data-test="music-service-item-image"
-                    src="https://services.linkfire.com/logo_bandcamp_onlight.svg"
-                    alt="bandcamp"
-                  ></img>
-                </a>
-              </li>
+              {current.bandcamp && (
+                <li>
+                  <a target="blank" href={current.bandcamp}>
+                    <img
+                      data-test="music-service-item-image"
+                      src="https://services.linkfire.com/logo_bandcamp_onlight.svg"
+                      alt="bandcamp"
+                    ></img>
+                  </a>
+                </li>
+              )}
               <li>
                 <a target="blank" href={current.youtube}>
                   <img
