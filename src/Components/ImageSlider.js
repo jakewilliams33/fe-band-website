@@ -68,19 +68,18 @@ export const ImageSlider = ({ showBackground }) => {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link
-              to="/listen/santa_what_you_got_for_me"
+            <a
+              href="https://open.spotify.com/playlist/3ac6Sgi3KGNKaIGsHCIaFf?si=f056e2b745a34835"
               style={{ height: "100%", width: "100%" }}
-              className={showBackground ? "off" : "on"}
             >
               <div
-                className="xmas"
+                className="playlist"
                 style={{
                   height: "100%",
                   width: "100%",
                 }}
               ></div>
-            </Link>
+            </a>
           </SwiperSlide>
           <SwiperSlide>
             <Link
