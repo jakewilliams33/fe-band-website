@@ -18,7 +18,7 @@ export const ImageSlider = ({ showBackground }) => {
   const linkStyle = {
     height: "100%",
     width: "100%",
-    "transition-delay": transitionVar,
+    transitionDelay: transitionVar,
   };
 
   return (
@@ -46,6 +46,21 @@ export const ImageSlider = ({ showBackground }) => {
             },
           }}
         >
+          <SwiperSlide>
+            <a
+              href="https://distrokid.com/hyperfollow/adultdvd/sadman-mancave?utm_source=SendGrid&utm_medium=Email%20&utm_campaign=website&fbclid=IwAR0MdU_qAQdu-khte9kg2er0MJaMmJlJnZtLNLgwPojadF1LZDMYscjNCuA"
+              style={linkStyle}
+              className={showBackground ? "off" : "on"}
+            >
+              <div
+                className="sadman"
+                style={{
+                  height: "100%",
+                  width: "100%",
+                }}
+              ></div>
+            </a>
+          </SwiperSlide>
           <SwiperSlide>
             <Link
               to="/listen/bill_murray"
