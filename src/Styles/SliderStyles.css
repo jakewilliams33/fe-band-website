@@ -165,24 +165,26 @@ body {
   position: absolute;
   width: 33vw;
   top: 13vh;
-  left: 33vw;
-  max-width: 420px;
+  left: 34vw;
+  min-width: 300px;
 }
 
 .listen-here {
   position: absolute;
   width: 26vw;
   top: 67vh;
-  left: 36vw;
-  max-width: 420px;
+  left: 37vw;
+  min-width: 210px;
 }
 
 .monkey {
   position: absolute;
   width: 30vw;
-  margin-top: 23vh;
+  margin-top: 25vh;
   margin-left: 34vw;
-  max-width: 420px;
+  display: flex;
+  min-width: 300px;
+  max-width: 540px;
 }
 
 @media screen and (max-width: 600px) {
@@ -274,17 +276,23 @@ body {
     width: 70vw;
     top: 15vh;
     left: 12vw;
+    display: flex;
+    min-width: unset;
   }
 
   .listen-here {
     width: 55vw;
     top: 68vh;
     left: 22vw;
+    display: flex;
+    min-width: unset;
   }
 
   .monkey {
     width: 71vw;
     margin-top: 29vh;
     margin-left: 12vw;
+    display: flex;
+    min-width: unset;
   }
 }
