@@ -47,10 +47,10 @@ export const ImageSlider = ({ showBackground }) => {
         <Swiper
           loop={true}
           centeredSlides={true}
-          // autoplay={{
-          //   delay: 20000,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 25000,
+            disableOnInteraction: false,
+          }}
           pagination={{
             clickable: false,
           }}

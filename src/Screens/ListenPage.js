@@ -222,15 +222,17 @@ export const ListenPage = ({ opacity }) => {
                   </a>
                 </li>
               )}
-              <li>
-                <a target="blank" href={current.youtube}>
-                  <img
-                    data-test="music-service-item-image"
-                    src="https://services.linkfire.com/logo_youtube_onlight.svg"
-                    alt="youtube"
-                  ></img>
-                </a>
-              </li>
+              {current.youtube && (
+                <li>
+                  <a target="blank" href={current.youtube}>
+                    <img
+                      data-test="music-service-item-image"
+                      src="https://services.linkfire.com/logo_youtube_onlight.svg"
+                      alt="youtube"
+                    ></img>
+                  </a>
+                </li>
+              )}
               <li>
                 <a target="blank" href={current.tidal}>
                   <img
