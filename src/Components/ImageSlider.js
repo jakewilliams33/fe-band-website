@@ -29,7 +29,7 @@ export const ImageSlider = ({ showBackground }) => {
           loop={true}
           centeredSlides={true}
           autoplay={{
-            delay: 25000,
+            delay: 35000,
             disableOnInteraction: false,
           }}
           pagination={{

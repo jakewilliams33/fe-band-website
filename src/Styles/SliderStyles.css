@@ -275,7 +275,7 @@ body {
   .out-now {
     width: 70vw;
     top: 15vh;
-    left: 12vw;
+    left: 13vw;
     display: flex;
     min-width: unset;
   }
@@ -291,7 +291,7 @@ body {
   .monkey {
     width: 71vw;
     margin-top: 29vh;
-    margin-left: 12vw;
+    margin-left: 13vw;
     display: flex;
     min-width: unset;
   }
