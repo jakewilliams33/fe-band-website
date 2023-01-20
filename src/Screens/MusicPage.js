@@ -11,8 +11,14 @@ import { motion } from "framer-motion";
 import treeboy from "../images/Covers/treeboy.jpg";
 import { Link } from "react-router-dom";
 import xmas from "../images/Covers/xmasCover.png";
+import sadman from "../images/Covers/sadmancover.jpg";
 
 const releaseContent = [
+  {
+    title: "Sadman Mancave",
+    image: sadman,
+    release_id: "sadman_mancave",
+  },
   {
     image: xmas,
     title: "Santa what you got for me?",

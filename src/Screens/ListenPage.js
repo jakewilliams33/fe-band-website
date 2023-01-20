@@ -12,6 +12,7 @@ import "../Styles/ListenPageStyles.css";
 import { motion } from "framer-motion";
 import { ErrorPage } from "./ErrorPage";
 import xmas from "../images/Covers/xmasCover.png";
+import sadman from "../images/Covers/sadmancover.jpg";
 
 export const ListenPage = ({ opacity }) => {
   const { release_id } = useParams();
@@ -19,6 +20,18 @@ export const ListenPage = ({ opacity }) => {
 
   const getCurrent = useCallback(() => {
     const releaseLinks = [
+      {
+        title: "Sadman Mancave",
+        name: "sadman_mancave",
+        spotify:
+          "https://open.spotify.com/track/3ap3V9N1KDlNlE7nV53iCx?si=8783ef5393f34e0d",
+        apple:
+          "https://music.apple.com/gb/album/sadman-mancave/1662396497?i=1662396498",
+        tidal: "https://listen.tidal.com/album/269560377/track/269560378",
+        amazon:
+          "https://music.amazon.co.uk/albums/B0BRJYMY66?trackAsin=B0BRJYP213",
+        image: sadman,
+      },
       {
         title: "Santa what you got for me?",
         name: "santa_what_you_got_for_me",

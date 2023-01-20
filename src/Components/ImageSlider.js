@@ -11,8 +11,18 @@ import billText from "../images/billText.png";
 import merchText from "../images/merchText.png";
 import tourText from "../images/tourText.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import Tilt from "react-parallax-tilt";
+import sadman from "../images/sadmanforeground.png";
+import outNow from "../images/out now.png";
+import listenHere from "../images/listen here.png";
 
 export const ImageSlider = ({ showBackground }) => {
+  const [alpha, setAlpha] = useState();
+  const [gamma, setGamma] = useState();
+
+  window.addEventListener("deviceorientation", handleMotionEvent, true);
+
   const transitionVar = showBackground ? "1s" : "0s";
 
   const linkStyle = {
@@ -21,16 +31,26 @@ export const ImageSlider = ({ showBackground }) => {
     transitionDelay: transitionVar,
   };
 
+  function handleMotionEvent(event) {
+    if (event.alpha > -35 && event.alpha < 35) {
+      setAlpha(event.alpha);
+    }
+
+    if (event.gamma > -35 && event.gamma < 35) {
+      setGamma(event.gamma);
+    }
+  }
+
   return (
     <>
       <div className="picContainer">
         <Swiper
           loop={true}
           centeredSlides={true}
-          autoplay={{
-            delay: 7000,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 20000,
+          //   disableOnInteraction: false,
+          // }}
           pagination={{
             clickable: false,
           }}
@@ -47,11 +67,28 @@ export const ImageSlider = ({ showBackground }) => {
           }}
         >
           <SwiperSlide>
-            <a
-              href="https://distrokid.com/hyperfollow/adultdvd/sadman-mancave?utm_source=SendGrid&utm_medium=Email%20&utm_campaign=website&fbclid=IwAR0MdU_qAQdu-khte9kg2er0MJaMmJlJnZtLNLgwPojadF1LZDMYscjNCuA"
+            <Link
+              to="/listen/sadman_mancave"
               style={linkStyle}
               className={showBackground ? "off" : "on"}
             >
+              <Tilt tiltAngleYManual={gamma}>
+                <img className="out-now" alt="out now" src={outNow}></img>
+              </Tilt>
+              <Tilt tiltAngleYManual={gamma}>
+                <img
+                  className="listen-here"
+                  alt="listen here"
+                  src={listenHere}
+                ></img>
+              </Tilt>
+              <Tilt
+                style={{ position: "absolute" }}
+                tiltAngleXManual={alpha}
+                tiltAngleYManual={gamma}
+              >
+                <img className="monkey" alt="monkey" src={sadman}></img>
+              </Tilt>
               <div
                 className="sadman"
                 style={{
@@ -59,7 +96,7 @@ export const ImageSlider = ({ showBackground }) => {
                   width: "100%",
                 }}
               ></div>
-            </a>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
             <Link
