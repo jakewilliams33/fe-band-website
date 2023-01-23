@@ -165,26 +165,37 @@ body {
   position: absolute;
   width: 33vw;
   top: 13vh;
-  left: 34vw;
   min-width: 300px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .listen-here {
   position: absolute;
   width: 26vw;
   top: 67vh;
-  left: 37vw;
   min-width: 210px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .monkey {
   position: absolute;
   width: 30vw;
-  margin-top: 25vh;
-  margin-left: 34vw;
-  display: flex;
+  margin-top: 24vh;
   min-width: 300px;
-  max-width: 540px;
+  max-width: 500px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -275,7 +286,6 @@ body {
   .out-now {
     width: 70vw;
     top: 15vh;
-    left: 13vw;
     display: flex;
     min-width: unset;
   }
@@ -283,7 +293,6 @@ body {
   .listen-here {
     width: 55vw;
     top: 68vh;
-    left: 22vw;
     display: flex;
     min-width: unset;
   }

@@ -1,5 +1,5 @@
 import Tilt from "react-parallax-tilt";
-import sadman from "../images/sadmanforeground.png";
+import sadman from "../images/sadmanforeground2.png";
 import outNow from "../images/out now.png";
 import listenHere from "../images/listen here.png";
 
