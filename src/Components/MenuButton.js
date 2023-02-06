@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
-import "../Styles/NewButtonStyle.css";
+import "../Styles/MenuButtonStyle.css";
 
-export const MenuButtonCopy = ({
+export const MenuButton = ({
   navbarOpen,
   setNavbarOpen,
   setShowBackground,

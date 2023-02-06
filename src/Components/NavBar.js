@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../Styles/NavbarStyles.css";
 import logo from "../images/logoroundbg.png";
-import { MenuButtonCopy } from "./MenuButtonCopy";
+import { MenuButton } from "./MenuButton";
 import { Link, useLocation } from "react-router-dom";
 import {
   faApple,
@@ -53,12 +53,12 @@ export const NavBar = ({ setShowBackground, showBackground }) => {
           navbarOpen ? "navbar-container-all active" : "navbar-container-all"
         }
       >
-        <MenuButtonCopy
+        <MenuButton
           navbarOpen={navbarOpen}
           setNavbarOpen={setNavbarOpen}
           setShowBackground={setShowBackground}
           showBackground={showBackground}
-        ></MenuButtonCopy>
+        ></MenuButton>
 
         <div style={{ width: "100%" }}>
           <nav>
