@@ -4,30 +4,30 @@ import "../Styles/NavbarStyles.css";
 export const DvdBanner = () => {
   const section = useRef();
   const dvdlogo = useRef();
-  const FPS = 40;
 
   let xPosition = Math.floor(Math.random() * (250 - -50 + 1) + -50);
   let yPosition = 5;
 
-  let xSpeed = Math.random() < 0.5 ? -2.5 : 2.5;
-  let ySpeed = 0.16;
+  let xSpeed = Math.random() < 0.5 ? -1.8 : 1.8;
+  let ySpeed = 0.1;
 
-  // let xSpeed = Math.random() < 0.5 ? 0.2 : -0.2;
-  // let ySpeed = 0.02;
-
-  function update() {
+  const update = () => {
     if (dvdlogo.current) {
       dvdlogo.current.style.left = xPosition + "px";
       dvdlogo.current.style.top = yPosition + "px";
     }
-  }
+  };
 
-  setInterval(() => {
+  const initialColor = "hsl(" + Math.random() * 360 + ", 100%, 75%)";
+
+  const changeColor = () => {
+    let color = "hsl(" + Math.random() * 360 + ", 100%, 75%)";
+    return color;
+  };
+
+  const playAnimation = () => {
     if (dvdlogo.current) {
-      if (
-        xPosition + 267 >= window.visualViewport.width + 120 ||
-        xPosition <= -56
-      ) {
+      if (xPosition + 147 >= window.visualViewport.width || xPosition <= -56) {
         xSpeed = -xSpeed;
         dvdlogo.current.style.fill = changeColor();
       }
@@ -36,18 +36,13 @@ export const DvdBanner = () => {
         dvdlogo.current.style.fill = changeColor();
       }
     }
-
     xPosition += xSpeed;
     yPosition += ySpeed;
     update();
-  }, 1000 / FPS);
 
-  function changeColor() {
-    let color = "hsl(" + Math.random() * 360 + ", 100%, 75%)";
-    return color;
-  }
-
-  const initialColor = "hsl(" + Math.random() * 360 + ", 100%, 75%)";
+    requestAnimationFrame(playAnimation);
+  };
+  requestAnimationFrame(playAnimation);
 
   return (
     <>
@@ -70,8 +65,8 @@ export const DvdBanner = () => {
           xmlns="http://www.w3.org/2000/svg"
           width="20px"
           height="20px"
-          viewBox="0 0 910.000000 187.000000"
-          style={{ left: 100, fill: initialColor }}
+          viewBox="0 0 910 187"
+          style={{ fill: initialColor }}
         >
           <g transform="translate(0.000000,187.000000) scale(0.100000,-0.100000)">
             <path

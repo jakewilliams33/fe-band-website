@@ -3,7 +3,6 @@ import "../Styles/NavbarStyles.css";
 
 export const DvdBackground = () => {
   const dvdlogo = useRef();
-  const FPS = 60;
 
   let xPosition = Math.floor(
     Math.random() * (visualViewport.width - 130 + 1) + -30
@@ -17,14 +16,14 @@ export const DvdBackground = () => {
   let xSpeed = Math.random() < 0.5 ? -2.5 : 2.5;
   let ySpeed = 0.5;
 
-  function update() {
+  const update = () => {
     if (dvdlogo.current) {
       dvdlogo.current.style.left = xPosition + "px";
       dvdlogo.current.style.top = yPosition + "px";
     }
-  }
+  };
 
-  setInterval(() => {
+  const playAnimation = () => {
     if (dvdlogo.current) {
       if (
         xPosition + 250 >= window.visualViewport.width + 128 ||
@@ -42,12 +41,15 @@ export const DvdBackground = () => {
     xPosition += xSpeed;
     yPosition += ySpeed;
     update();
-  }, 1000 / FPS);
 
-  function changeColor() {
+    requestAnimationFrame(playAnimation);
+  };
+  requestAnimationFrame(playAnimation);
+
+  const changeColor = () => {
     let color = "hsl(" + Math.random() * 360 + ", 100%, 75%)";
     return color;
-  }
+  };
 
   let initialColor = "hsl(" + Math.random() * 360 + ", 100%, 75%)";
 
@@ -62,8 +64,6 @@ export const DvdBackground = () => {
         height="150px"
         viewBox="0 0 960.000000 960.000000"
         style={{
-          left: "300px",
-          top: "0px",
           zIndex: 5000,
           position: "absolute",
           fill: initialColor,
