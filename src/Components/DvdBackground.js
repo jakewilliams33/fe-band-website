@@ -25,10 +25,7 @@ export const DvdBackground = () => {
 
   const playAnimation = () => {
     if (dvdlogo.current) {
-      if (
-        xPosition + 250 >= window.visualViewport.width + 128 ||
-        xPosition <= -32
-      ) {
+      if (xPosition + 122 >= window.visualViewport.width || xPosition <= -32) {
         xSpeed = -xSpeed;
         dvdlogo.current.style.fill = changeColor();
       }
@@ -37,21 +34,17 @@ export const DvdBackground = () => {
         dvdlogo.current.style.fill = changeColor();
       }
     }
-
     xPosition += xSpeed;
     yPosition += ySpeed;
     update();
-
     requestAnimationFrame(playAnimation);
   };
   requestAnimationFrame(playAnimation);
 
   const changeColor = () => {
-    let color = "hsl(" + Math.random() * 360 + ", 100%, 75%)";
+    const color = `hsl(${Math.random() * 360}, 100%, 75%)`;
     return color;
   };
-
-  let initialColor = "hsl(" + Math.random() * 360 + ", 100%, 75%)";
 
   return (
     <>
@@ -66,7 +59,7 @@ export const DvdBackground = () => {
         style={{
           zIndex: 5000,
           position: "absolute",
-          fill: initialColor,
+          fill: changeColor(),
         }}
       >
         <g

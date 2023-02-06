@@ -18,10 +18,8 @@ export const DvdBanner = () => {
     }
   };
 
-  const initialColor = "hsl(" + Math.random() * 360 + ", 100%, 75%)";
-
   const changeColor = () => {
-    let color = "hsl(" + Math.random() * 360 + ", 100%, 75%)";
+    const color = `hsl(${Math.random() * 360}, 100%, 75%)`;
     return color;
   };
 
@@ -66,7 +64,7 @@ export const DvdBanner = () => {
           width="20px"
           height="20px"
           viewBox="0 0 910 187"
-          style={{ fill: initialColor }}
+          style={{ fill: changeColor() }}
         >
           <g transform="translate(0.000000,187.000000) scale(0.100000,-0.100000)">
             <path
