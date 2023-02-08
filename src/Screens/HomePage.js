@@ -2,7 +2,7 @@ import React from "react";
 import { ImageSlider } from "../Components/ImageSlider";
 import { motion } from "framer-motion";
 
-export const HomePage = ({ showBackground, opacity }) => {
+export const HomePage = ({ opacity }) => {
   return (
     <motion.div
       variants={opacity}
@@ -11,7 +11,7 @@ export const HomePage = ({ showBackground, opacity }) => {
       exit="exit"
       transition={{ duration: 0.2 }}
     >
-      <ImageSlider showBackground={showBackground}></ImageSlider>
+      <ImageSlider></ImageSlider>
     </motion.div>
   );
 };

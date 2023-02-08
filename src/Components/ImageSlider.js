@@ -13,7 +13,7 @@ import tourText from "../images/tourText.png";
 import { Link } from "react-router-dom";
 import { SadmanMotion } from "./SadmanMotion";
 
-export const ImageSlider = ({ showBackground }) => {
+export const ImageSlider = () => {
   const linkStyle = {
     height: "100%",
     width: "100%",

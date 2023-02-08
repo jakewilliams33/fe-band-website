@@ -35,13 +35,7 @@ export const AnimatedRoutes = ({ showBackground }) => {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route
-          exact
-          path="/"
-          element={
-            <HomePage showBackground={showBackground} opacity={opacity} />
-          }
-        />
+        <Route exact path="/" element={<HomePage opacity={opacity} />} />
         <Route path="/music" element={<MusicPage slide={slide} />} />
         <Route path="/merch" element={<MerchPage opacity={opacity} />} />
         <Route path="/tour" element={<TourPage slide={slide} />} />
