@@ -14,12 +14,9 @@ import { Link } from "react-router-dom";
 import { SadmanMotion } from "./SadmanMotion";
 
 export const ImageSlider = ({ showBackground }) => {
-  const transitionVar = showBackground ? "1s" : "0s";
-
   const linkStyle = {
     height: "100%",
     width: "100%",
-    transitionDelay: transitionVar,
   };
 
   return (
@@ -29,11 +26,11 @@ export const ImageSlider = ({ showBackground }) => {
           loop={true}
           centeredSlides={true}
           autoplay={{
-            delay: 35000,
+            delay: 13000,
             disableOnInteraction: false,
           }}
           pagination={{
-            clickable: false,
+            clickable: true,
           }}
           modules={[Autoplay, Pagination, Navigation, EffectFade]}
           navigation={true}
@@ -48,11 +45,7 @@ export const ImageSlider = ({ showBackground }) => {
           }}
         >
           <SwiperSlide>
-            <Link
-              to="/listen/sadman_mancave"
-              style={linkStyle}
-              className={showBackground ? "off" : "on"}
-            >
+            <Link to="/listen/sadman_mancave" style={linkStyle}>
               <SadmanMotion></SadmanMotion>
               <div
                 className="sadman"
@@ -64,11 +57,7 @@ export const ImageSlider = ({ showBackground }) => {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link
-              to="/listen/bill_murray"
-              style={linkStyle}
-              className={showBackground ? "off" : "on"}
-            >
+            <Link to="/listen/bill_murray" style={linkStyle}>
               <div
                 className="bill"
                 style={{
@@ -99,11 +88,7 @@ export const ImageSlider = ({ showBackground }) => {
             </a>
           </SwiperSlide>
           <SwiperSlide>
-            <Link
-              to="/listen/role_models"
-              style={linkStyle}
-              className={showBackground ? "off" : "on"}
-            >
+            <Link to="/listen/role_models" style={linkStyle}>
               <div
                 className="treeboy"
                 style={{
@@ -119,11 +104,7 @@ export const ImageSlider = ({ showBackground }) => {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link
-              style={linkStyle}
-              to="merch"
-              className={showBackground ? "off" : "on"}
-            >
+            <Link style={linkStyle} to="merch">
               <div
                 className="shirts"
                 style={{
@@ -140,11 +121,7 @@ export const ImageSlider = ({ showBackground }) => {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link
-              style={linkStyle}
-              to="tour"
-              className={showBackground ? "off" : "on"}
-            >
+            <Link style={linkStyle} to="tour">
               <img src={group1} alt="band" className="band"></img>
               <img src={tourText} className="tourText" alt="tour dates"></img>
             </Link>

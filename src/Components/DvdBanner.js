@@ -8,7 +8,7 @@ export const DvdBanner = () => {
   let xPosition = Math.floor(Math.random() * (250 - -50 + 1) + -50);
   let yPosition = 5;
 
-  let xSpeed = Math.random() < 0.5 ? -1.8 : 1.8;
+  let xSpeed = Math.random() < 0.5 ? -1.6 : 1.6;
   let ySpeed = 0.1;
 
   const update = () => {
@@ -24,6 +24,8 @@ export const DvdBanner = () => {
   };
 
   const playAnimation = () => {
+    requestAnimationFrame(playAnimation);
+
     if (dvdlogo.current) {
       if (xPosition + 147 >= window.visualViewport.width || xPosition <= -56) {
         xSpeed = -xSpeed;
@@ -37,10 +39,9 @@ export const DvdBanner = () => {
     xPosition += xSpeed;
     yPosition += ySpeed;
     update();
-
-    requestAnimationFrame(playAnimation);
   };
-  requestAnimationFrame(playAnimation);
+
+  playAnimation();
 
   return (
     <>

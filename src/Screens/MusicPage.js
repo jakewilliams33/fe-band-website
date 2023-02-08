@@ -6,12 +6,12 @@ import FOMO from "../images/Covers/FOMO.png";
 import brokenEnglish from "../images/Covers/brokenEnglish.png";
 import iHadRemix from "../images/Covers/iHadRemix.png";
 import beRemix from "../images/Covers/beRemix.png";
-import "../Styles/MusicPageStyles.css";
-import { motion } from "framer-motion";
-import treeboy from "../images/Covers/treeboy.jpg";
-import { Link } from "react-router-dom";
 import xmas from "../images/Covers/xmasCover.png";
 import sadman from "../images/Covers/sadmancover.jpg";
+import treeboy from "../images/Covers/treeboy.jpg";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import "../Styles/MusicPageStyles.css";
 
 const releaseContent = [
   {
