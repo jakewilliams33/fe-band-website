@@ -12,8 +12,10 @@ import treeboy from "../images/Covers/treeboy.jpg";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "../Styles/MusicPageStyles.css";
+import drivers from "../images/Covers/driversSide.png";
 
 const releaseContent = [
+  { title: "Drivers Side", image: drivers, release_id: "drivers_side" },
   {
     title: "Sadman Mancave",
     image: sadman,

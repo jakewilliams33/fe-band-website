@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 import { ErrorPage } from "./ErrorPage";
 import xmas from "../images/Covers/xmasCover.png";
 import sadman from "../images/Covers/sadmancover.jpg";
+import drivers from "../images/Covers/driversSide.png";
 
 export const ListenPage = ({ opacity }) => {
   const { release_id } = useParams();
@@ -20,6 +21,18 @@ export const ListenPage = ({ opacity }) => {
 
   const getCurrent = useCallback(() => {
     const releaseLinks = [
+      {
+        title: "Drivers side",
+        name: "drivers_side",
+        spotify:
+          "https://open.spotify.com/track/1fSARsOQU6LUsNUsGN6ra1?si=87cc91b39e004fee",
+        apple:
+          "https://music.apple.com/gb/album/drivers-side/1676952171?i=1676952172",
+        tidal: "https://listen.tidal.com/album/276496727/track/276496728",
+        amazon:
+          "https://music.amazon.co.uk/albums/B0BVP637BF?refMarker=null&trackAsin=B0BVPW77S7",
+        image: drivers,
+      },
       {
         title: "Sadman Mancave",
         name: "sadman_mancave",

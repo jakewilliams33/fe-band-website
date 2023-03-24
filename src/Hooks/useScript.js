@@ -5,8 +5,8 @@ export const useScript = (url) => {
     const script = document.createElement("script");
 
     script.src = url;
-    script.async = true;
     document.body.appendChild(script);
+    console.log(document.body);
     return () => {
       document.body.removeChild(script);
     };

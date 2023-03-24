@@ -24,8 +24,6 @@ export const DvdBackground = () => {
   };
 
   const playAnimation = () => {
-    requestAnimationFrame(playAnimation);
-
     if (dvdlogo.current) {
       if (xPosition + 122 >= window.visualViewport.width || xPosition <= -32) {
         xSpeed = -xSpeed;
@@ -39,8 +37,10 @@ export const DvdBackground = () => {
     xPosition += xSpeed;
     yPosition += ySpeed;
     update();
+
+    requestAnimationFrame(playAnimation);
   };
-  playAnimation();
+  requestAnimationFrame(playAnimation);
 
   const changeColor = () => {
     const color = `hsl(${Math.random() * 360}, 100%, 75%)`;
