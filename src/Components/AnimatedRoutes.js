@@ -8,6 +8,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { MusicPage } from "../Screens/MusicPage";
 import { AnimatePresence } from "framer-motion";
 import { ListenPage } from "../Screens/ListenPage";
+import { StreamingLinks } from "../Screens/StreamingLinks";
 
 export const AnimatedRoutes = ({ showBackground }) => {
   const location = useLocation();
@@ -44,6 +45,7 @@ export const AnimatedRoutes = ({ showBackground }) => {
           path="/listen/:release_id"
           element={<ListenPage opacity={opacity} />}
         />
+        <Route path="/streaming_links" element={<StreamingLinks />} />
         <Route path="/*" element={<ErrorPage opacity={opacity} />} />
       </Routes>
     </AnimatePresence>
