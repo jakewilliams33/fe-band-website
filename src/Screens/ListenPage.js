@@ -14,7 +14,7 @@ import { ErrorPage } from "./ErrorPage";
 import xmas from "../images/Covers/xmasCover.png";
 import sadman from "../images/Covers/sadmancover.jpg";
 import drivers from "../images/Covers/driversSide.png";
-
+import fountain from "../images/Covers/fountain.png";
 export const ListenPage = ({ opacity }) => {
   const { release_id } = useParams();
   const [current, setCurrent] = useState({});
@@ -31,7 +31,7 @@ export const ListenPage = ({ opacity }) => {
         tidal: "https://listen.tidal.com/album/276474181/track/276474182",
         amazon:
           "https://music.amazon.co.uk/albums/B0BVP1JPCF?trackAsin=B0BVPTKMYY",
-        image: drivers,
+        image: fountain,
       },
       {
         title: "Drivers side",
