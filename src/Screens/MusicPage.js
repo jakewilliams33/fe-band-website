@@ -13,8 +13,14 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "../Styles/MusicPageStyles.css";
 import drivers from "../images/Covers/driversSide.png";
+import fountain from "../images/Covers/fountain.png";
 
 const releaseContent = [
+  {
+    title: "Fountain of Youth",
+    image: fountain,
+    release_id: "fountain_of_youth",
+  },
   { title: "Drivers Side", image: drivers, release_id: "drivers_side" },
   {
     title: "Sadman Mancave",

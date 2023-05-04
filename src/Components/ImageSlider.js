@@ -12,6 +12,9 @@ import merchText from "../images/merchText.png";
 import tourText from "../images/tourText.png";
 import { Link } from "react-router-dom";
 import { SadmanMotion } from "./SadmanMotion";
+import fountaingif from "../images/fountaingif.png";
+import fountaintext from "../images/fountaintext.png";
+import outnowf from "../images/outnowf.png";
 
 export const ImageSlider = () => {
   const linkStyle = {
@@ -26,7 +29,7 @@ export const ImageSlider = () => {
           loop={true}
           centeredSlides={true}
           autoplay={{
-            delay: 13000,
+            delay: 1900000,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -44,6 +47,46 @@ export const ImageSlider = () => {
             },
           }}
         >
+          <SwiperSlide>
+            <Link to="/listen/fountain_of_youth" style={linkStyle}>
+              <div style={{ backgroundColor: "rgb(39,39,39)" }}>
+                <img
+                  alt="fountain of youth cover"
+                  style={{
+                    marginTop: "-10px",
+                    marginLeft: "-30px",
+                    height: "100vh",
+                  }}
+                  src={fountaingif}
+                ></img>
+                <img
+                  alt="fountain of youth"
+                  src={fountaintext}
+                  style={{
+                    position: "absolute",
+                    marginLeft: "-30px",
+                    height: "40px",
+                    bottom: "12%",
+                    left: 0,
+                    right: 0,
+                    margin: "0 auto",
+                  }}
+                ></img>
+                <img
+                  alt="out now"
+                  src={outnowf}
+                  style={{
+                    position: "absolute",
+                    height: "60px",
+                    top: "32%",
+                    left: 0,
+                    right: 0,
+                    margin: "0 auto",
+                  }}
+                ></img>
+              </div>
+            </Link>
+          </SwiperSlide>
           <SwiperSlide>
             <Link to="/listen/sadman_mancave" style={linkStyle}>
               <SadmanMotion></SadmanMotion>

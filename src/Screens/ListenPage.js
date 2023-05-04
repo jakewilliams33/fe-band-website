@@ -22,6 +22,18 @@ export const ListenPage = ({ opacity }) => {
   const getCurrent = useCallback(() => {
     const releaseLinks = [
       {
+        title: "Fountain of Youth",
+        name: "fountain_of_youth",
+        spotify:
+          "https://open.spotify.com/track/7aMCvb9GLrvbwHA3P2evFj?si=de3b906e4fed40a3",
+        apple:
+          "https://music.apple.com/gb/album/fountain-of-youth/1678326386?i=1678326387",
+        tidal: "https://listen.tidal.com/album/276474181/track/276474182",
+        amazon:
+          "https://music.amazon.co.uk/albums/B0BVP1JPCF?trackAsin=B0BVPTKMYY",
+        image: drivers,
+      },
+      {
         title: "Drivers side",
         name: "drivers_side",
         spotify:
