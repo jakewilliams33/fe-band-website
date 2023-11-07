@@ -1,7 +1,20 @@
+@font-face {
+  font-family: sequelblack;
+  src: url(../Fonts/Sequel100Black/Sequel100Black-95.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: sequelblacksmall;
+  src: url(../Fonts/Sequel100Black/Sequel100Black-75.ttf);
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
   align-items: center;
+  font: sequelblack;
 }
 
 html body {
@@ -17,7 +30,6 @@ html body {
   height: auto;
   width: 100%;
   z-index: -0;
-  font: bebas neue;
 }
 
 .bannerContainer {

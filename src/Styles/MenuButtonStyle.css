@@ -5,6 +5,7 @@
 }
 
 .case {
+  cursor: pointer;
   position: fixed;
   top: 20px;
   right: 20px;
@@ -20,6 +21,7 @@
 }
 
 .caseOpen {
+  cursor: pointer;
   position: fixed;
   right: 50%;
   transform: translateX(39%);

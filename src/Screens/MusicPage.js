@@ -14,8 +14,10 @@ import { Link } from "react-router-dom";
 import "../Styles/MusicPageStyles.css";
 import drivers from "../images/Covers/driversSide.png";
 import fountain from "../images/Covers/fountain.png";
+import yacht from "../images/Yacht.png";
 
 const releaseContent = [
+  { title: "Yacht Money", image: yacht, release_id: "yacht_money" },
   {
     title: "Fountain of Youth",
     image: fountain,

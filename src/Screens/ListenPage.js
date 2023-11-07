@@ -15,12 +15,26 @@ import xmas from "../images/Covers/xmasCover.png";
 import sadman from "../images/Covers/sadmancover.jpg";
 import drivers from "../images/Covers/driversSide.png";
 import fountain from "../images/Covers/fountain.png";
+import yacht from "../images/Yacht.png";
 export const ListenPage = ({ opacity }) => {
   const { release_id } = useParams();
   const [current, setCurrent] = useState({});
 
   const getCurrent = useCallback(() => {
     const releaseLinks = [
+      {
+        title: "Yacht Money",
+        name: "yacht_money",
+        spotify:
+          "https://open.spotify.com/track/15IpsxxAoY6wAkppXaGftf?si=93f1c7348b124c56",
+        apple: "https://music.apple.com/gb/album/yacht-money-single/1711101720",
+        tidal: "https://listen.tidal.com/track/320756655",
+        amazon:
+          "https://music.amazon.co.uk/albums/B0CKS16GYV?trackAsin=B0CKRYQLCB",
+        youtube: "https://youtube.com/watch?v=JTGJxCEU-CI",
+        deezer: "https://www.deezer.com/track/2490867721",
+        image: yacht,
+      },
       {
         title: "Fountain of Youth",
         name: "fountain_of_youth",

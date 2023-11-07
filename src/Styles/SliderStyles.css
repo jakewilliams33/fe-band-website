@@ -91,33 +91,9 @@ body {
 
 /* pictures desktop  */
 
-.bill {
-  background-image: url("../images/billGif.gif");
-  width: "100%";
-  height: "100%";
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.playlist {
-  background-image: url("../images/adultdj.png");
-  width: "80%";
-  height: "80%";
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.sadman {
-  background-image: url("../images/sadmandesktop.png");
-  background-size: 100% 100%;
-}
-
-.treeboy {
-  background-image: url("../images/treeboyBlack1.png");
-  width: "100%";
-  height: "100%";
+.yacht {
+  height: 67vh;
+  transition: all 1s;
 }
 
 .shirts {
@@ -127,23 +103,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-.billText {
-  margin-top: 100px;
-  min-width: 600px;
-  width: 45%;
-}
-
-.treeboyText {
-  position: absolute;
-  background-image: url("../images/treeboyText.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  top: 50px;
-  left: 5%;
-  width: 90%;
-  height: 90%;
-  z-index: 684984984984984;
 }
 
 .merchText {
@@ -161,72 +120,12 @@ body {
   max-width: 580px;
 }
 
-.out-now {
-  position: absolute;
-  width: 33vw;
-  top: 13vh;
-  min-width: 300px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.listen-here {
-  position: absolute;
-  width: 26vw;
-  top: 67vh;
-  min-width: 210px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.monkey {
-  position: absolute;
-  width: 30vw;
-  margin-top: 24vh;
-  min-width: 300px;
-  max-width: 500px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
 @media screen and (max-width: 600px) {
   /* pictures mobile  */
 
-  .treeboy {
-    background-image: url("../images/mobileTreeboyblack1.png");
-    width: "100%";
-    height: "100%";
-    background-size: 100% 100%;
-  }
-
-  .bill {
-    background-image: url("../images/billgif4.png");
-    width: "100%";
-    height: "100%";
-    background-position: center;
-    background-size: cover;
-  }
-
-  .sadman {
-    background-image: url("../images/sadmanbackground.png");
-    background-size: 100% 100%;
-  }
-
-  .playlist {
-    background-image: url("../images/adultdjmobile.png");
-    width: "100%";
-    height: "100%";
-    background-position: center;
-    background-size: cover;
+  .yacht {
+    height: 44vh;
+    margin-bottom: 15vh;
   }
 
   .shirts {
@@ -253,17 +152,6 @@ body {
     object-position: 20% 50%;
   }
 
-  .billText {
-    width: 100%;
-    min-width: unset;
-    filter: brightness(0%);
-  }
-
-  .treeboyText {
-    background-image: url("../images/treeboyTextMobile.png");
-    width: 150%;
-  }
-
   .merchText {
     min-width: unset;
     width: 65%;
@@ -286,21 +174,6 @@ body {
   .out-now {
     width: 70vw;
     top: 15vh;
-    display: flex;
-    min-width: unset;
-  }
-
-  .listen-here {
-    width: 55vw;
-    top: 68vh;
-    display: flex;
-    min-width: unset;
-  }
-
-  .monkey {
-    width: 71vw;
-    margin-top: 29vh;
-    margin-left: 13vw;
     display: flex;
     min-width: unset;
   }
