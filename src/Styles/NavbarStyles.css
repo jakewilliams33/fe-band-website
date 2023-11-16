@@ -81,7 +81,15 @@ nav {
   display: none;
 }
 
+.nav-switch-mobile {
+  height: unset;
+}
+
 @media screen and (max-width: 800px) {
+  .nav-switch-mobile {
+    height: 100vh;
+  }
+
   nav {
     font: 20px sequelblack;
   }
@@ -178,13 +186,12 @@ nav {
   }
 
   .iconContainer {
-    position: absolute;
     right: 0;
     left: 0;
-    padding-left: 25px;
+    padding-left: 15px;
     font-size: 33px;
     top: unset;
-    bottom: -60vh;
+    bottom: 28vh;
   }
 
   .iconContainer a {

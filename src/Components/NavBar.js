@@ -63,7 +63,7 @@ export const NavBar = ({ setShowBackground, showBackground }) => {
         <div style={{ width: "100%" }}>
           <nav>
             <img className="logo" alt="spinning Logo" src={logo}></img>
-            <div>
+            <div className="nav-switch-mobile">
               <ul
                 className={
                   navbarOpen ? "navbar-pages-list active" : "navbar-pages-list"
