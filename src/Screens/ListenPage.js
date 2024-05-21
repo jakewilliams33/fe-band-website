@@ -31,7 +31,7 @@ export const ListenPage = ({ opacity }) => {
         tidal: "https://listen.tidal.com/track/362028417",
         amazon:
           "https://music.amazon.co.uk/albums/B0D3LXCJ6J?trackAsin=B0D3LZCSLB",
-        image: <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4hjriUnO5u8nR_i29VzBiwoUAATXZP75BydNPEEKNKA&s"/>
+        image: <img alt="image of album cover" src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4hjriUnO5u8nR_i29VzBiwoUAATXZP75BydNPEEKNKA&s"/>
       },
       {
         title: "Yacht Money",
