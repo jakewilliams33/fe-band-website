@@ -23,6 +23,17 @@ export const ListenPage = ({ opacity }) => {
   const getCurrent = useCallback(() => {
     const releaseLinks = [
       {
+        title: "7 Foot 1",
+        name: "7_Foot_1",
+        spotify:
+          "https://open.spotify.com/track/2vu2pw4QatuiP6w3JO8XHT",
+        apple: "https://music.apple.com/gb/album/7-foot-1/1745766006?i=1745766007&app=music",
+        tidal: "https://listen.tidal.com/track/362028417",
+        amazon:
+          "https://music.amazon.co.uk/albums/B0D3LXCJ6J?trackAsin=B0D3LZCSLB",
+        image: <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4hjriUnO5u8nR_i29VzBiwoUAATXZP75BydNPEEKNKA&s"/>
+      },
+      {
         title: "Yacht Money",
         name: "yacht_money",
         spotify:
