@@ -16,6 +16,7 @@ import sadman from "../images/Covers/sadmancover.jpg";
 import drivers from "../images/Covers/driversSide.png";
 import fountain from "../images/Covers/fountain.png";
 import yacht from "../images/Yacht.png";
+import sevenft1 from "../images/images.jpeg
 export const ListenPage = ({ opacity }) => {
   const { release_id } = useParams();
   const [current, setCurrent] = useState({});
@@ -31,7 +32,7 @@ export const ListenPage = ({ opacity }) => {
         tidal: "https://listen.tidal.com/track/362028417",
         amazon:
           "https://music.amazon.co.uk/albums/B0D3LXCJ6J?trackAsin=B0D3LZCSLB",
-        image: <img alt="image of album cover" src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4hjriUnO5u8nR_i29VzBiwoUAATXZP75BydNPEEKNKA&s"/>
+        image: sevenft1
       },
       {
         title: "Yacht Money",
