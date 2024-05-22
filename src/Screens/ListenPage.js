@@ -16,7 +16,7 @@ import sadman from "../images/Covers/sadmancover.jpg";
 import drivers from "../images/Covers/driversSide.png";
 import fountain from "../images/Covers/fountain.png";
 import yacht from "../images/Yacht.png";
-import sevenft1 from "../images/images.jpeg
+import sevenft1 from "../images/images.jpeg";
 export const ListenPage = ({ opacity }) => {
   const { release_id } = useParams();
   const [current, setCurrent] = useState({});
