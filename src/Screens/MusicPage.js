@@ -20,7 +20,7 @@ import sevenft1 from "../images/images.jpeg";
 const releaseContent = [
     {
     title: "7 Foot 1",
-    image: sevenfoot1,
+    image: sevenft1,
     release_id: "7_foot_1",
   },
   { title: "Yacht Money", image: yacht, release_id: "yacht_money" },
