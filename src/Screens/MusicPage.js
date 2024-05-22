@@ -15,8 +15,14 @@ import "../Styles/MusicPageStyles.css";
 import drivers from "../images/Covers/driversSide.png";
 import fountain from "../images/Covers/fountain.png";
 import yacht from "../images/Yacht.png";
+import sevenft1 from "../images/images.jpeg";
 
 const releaseContent = [
+    {
+    title: "7 Foot 1",
+    image: sevenfoot1,
+    release_id: "7_foot_1",
+  },
   { title: "Yacht Money", image: yacht, release_id: "yacht_money" },
   {
     title: "Fountain of Youth",
