@@ -25,7 +25,7 @@ export const ListenPage = ({ opacity }) => {
     const releaseLinks = [
       {
         title: "7 Foot 1",
-        name: "7_Foot_1",
+        name: "7_foot_1",
         spotify:
           "https://open.spotify.com/track/2vu2pw4QatuiP6w3JO8XHT",
         apple: "https://music.apple.com/gb/album/7-foot-1/1745766006?i=1745766007&app=music",
